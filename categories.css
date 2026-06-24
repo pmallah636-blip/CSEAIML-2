@@ -1,0 +1,52 @@
+/* ===== CATEGORIES.CSS ===== */
+.categories {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 20px 16px 8px;
+}
+.categories-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+.category-card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+.category-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+.category-card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 54px;
+  background: var(--bg-light);
+}
+.category-card-name {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.category-card-link {
+  padding: 0 12px 12px;
+  font-size: 13px;
+  color: var(--amazon-link);
+  display: block;
+}
+.category-card-link:hover { color: var(--amazon-link-hover); text-decoration: underline; }
