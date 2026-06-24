@@ -1,0 +1,39 @@
+/* ===== VARIABLES.CSS — Design Tokens ===== */
+:root {
+  /* Amazon Brand Colors */
+  --amazon-orange:       #FF9900;
+  --amazon-orange-dark:  #E47911;
+  --amazon-orange-light: #FEBD69;
+  --amazon-blue-dark:    #131921;
+  --amazon-blue-mid:     #232F3E;
+  --amazon-blue-light:   #37475A;
+  --amazon-teal:         #00838F;
+  --amazon-link:         #007185;
+  --amazon-link-hover:   #C7511F;
+
+  /* UI Colors */
+  --white:        #FFFFFF;
+  --bg-light:     #f3f3f3;
+  --bg-card:      #FFFFFF;
+  --border:       #dddddd;
+  --border-light: #eaeaea;
+  --text-primary: #0f1111;
+  --text-secondary:#565959;
+  --text-muted:   #888888;
+  --star:         #FF9900;
+  --red:          #B12704;
+  --green:        #007600;
+  --shadow:       0 2px 8px rgba(0,0,0,0.12);
+  --shadow-hover: 0 4px 20px rgba(0,0,0,0.18);
+
+  /* Layout */
+  --navbar-height:   60px;
+  --sidebar-width:   380px;
+  --max-width:       1500px;
+  --border-radius:   8px;
+  --border-radius-sm:4px;
+
+  /* Transitions */
+  --transition: 0.2s ease;
+  --transition-slow: 0.35s ease;
+}
