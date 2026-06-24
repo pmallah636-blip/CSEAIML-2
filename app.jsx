@@ -1,54 +1,13 @@
-import { useState } from "react";
-
+import './App1.css'
+import Student from './Student'
 function App() {
-  const [number, setNumber] = useState("");
-  const [result, setResult] = useState("");
-
-  const checkPrime = () => {
-    const num = parseInt(number);
-
-    if (isNaN(num)) {
-      setResult("Please enter a valid number!");
-      return;
-    }
-
-    if (num < 2) {
-      setResult(`${num} is NOT a Prime Number ❌`);
-      return;
-    }
-
-    let isPrime = true;
-
-    for (let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % i === 0) {
-        isPrime = false;
-        break;
-      }
-    }
-
-    setResult(
-      isPrime
-        ? `${num} is a Prime Number ✅`
-        : `${num} is NOT a Prime Number ❌`
-    );
-  };
-
-  return (
-    <div style={{ textAlign: "center", marginTop: "100px" }}>
-      <h1>Prime Number Checker</h1>
-
-      <input
-        type="number"
-        placeholder="Enter a number"
-        value={number}
-        onChange={(e) => setNumber(e.target.value)}
-      />
-
-      <button onClick={checkPrime}>Check</button>
-
-      <h2>{result}</h2>
-    </div>
-  );
+ return (
+ <>
+ <h2>Student Information</h2>
+ <Student name="Raj" course="B.tech" marks="90" />
+ <Student name="Ram" course="M.tech" marks="95" />
+ <Student name="Rohan" course="MCA" marks="99" />
+ </>
+ )
 }
-
-export default App;
+export default App
